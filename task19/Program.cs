@@ -1,10 +1,10 @@
 ﻿Console.WriteLine("Введите пятизначное число");
 int n = Convert.ToInt32(Console.ReadLine());
-int y = n;
 int revers = 0;
-if (n>9999 && n < 100000)Console.Write(Polindrom(n) == n ? "Да" : "Нет");
+int newnum=0;
+if (n > 9999 && n < 100000) Console.Write(Polindrom(n) == n ? "Да" : "Нет");
 else Console.WriteLine("Число не пятизначное");
-int Polindrom(int newnum)
+int Polindrom(int y)
 {
     while (y > 0)
     {
