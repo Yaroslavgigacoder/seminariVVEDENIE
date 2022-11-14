@@ -12,4 +12,4 @@ Console.WriteLine("Введите число");
 int num = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите степень");
 int deg = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(deg > 0 ?$"{Prod(num, deg)}"  : "Степень чилса не является натуральным числом");
+Console.WriteLine(deg > 0 ? $"{Prod(num, deg)}" : "Степень чилса не является натуральным числом");
