@@ -27,15 +27,15 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-void FindElement(int elementrows, int elementcolums,int[,] matrix)
+void FindElement(int elementrows, int elementcolums, int[,] matrix)
 {
-    if(elementcolums<0&&elementrows<0) Console.Write("Индeксы введены не корректно");
+    if (elementcolums < 0 && elementrows < 0) Console.Write("Индeксы введены не корректно");
     else Console.Write(elementrows < matrix.GetLength(0) && elementcolums < matrix.GetLength(1) ? "Такой элемент в массиве есть" : "Такого элемента нет");
 }
 Console.WriteLine("Введите индекс строки:");
 int elemrows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите индекс столбца:");
 int elemcolums = Convert.ToInt32(Console.ReadLine());
-int[,] array2D = CreateMatrixRndInt(2, 2, -9, 9);
+int[,] array2D = CreateMatrixRndInt(2, 3, -9, 9);
 PrintMatrix(array2D);
-FindElement(elemrows,elemcolums,array2D);
+FindElement(elemrows, elemcolums, array2D);
