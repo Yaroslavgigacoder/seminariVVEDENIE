@@ -32,9 +32,9 @@ int[,] MultiMatrix(int[,] matrix1, int[,] matrix2)
     for (int i = 0; i < matrix1.GetLength(0); i++)
     {
         for (int j = 0; j < matrix1.GetLength(1); j++)
-        {   
+        {
             for (int k = 0; k < matrix1.GetLength(1); k++)
-            {   
+            {
                 matrix[i, j] = matrix[i, j] + (matrix1[i, k] * matrix2[k, j]);
             }
         }
@@ -47,7 +47,7 @@ Console.WriteLine();
 int[,] array2D2 = CreateMatrixRndInt(2, 2, 1, 5);
 PrintMatrix(array2D2);
 Console.WriteLine();
-if(array2D1.GetLength(0)==array2D2.GetLength(1))
+if (array2D1.GetLength(0) == array2D2.GetLength(1))
 {
     int[,] multimatrix = MultiMatrix(array2D1, array2D2);
     PrintMatrix(multimatrix);
