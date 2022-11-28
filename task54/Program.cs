@@ -33,17 +33,16 @@ void SortMatrix(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            for (int k = 0; k < matrix.GetLength(1)-1; k++)
+            for (int k = 0; k < matrix.GetLength(1) - 1; k++)
             {
-                if(matrix[i,k]< matrix[i,k+1]) 
+                if (matrix[i, k] < matrix[i, k + 1])
                 {
-                    int temp=0;
-                    temp=matrix[i,k];
-                    matrix[i,k]=matrix[i,k+1];
-                    matrix[i,k+1]=temp;
-                } 
+                    int temp = 0;
+                    temp = matrix[i, k];
+                    matrix[i, k] = matrix[i, k + 1];
+                    matrix[i, k + 1] = temp;
+                }
             }
-         
         }
     }
 }
