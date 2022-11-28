@@ -41,14 +41,14 @@ int[] SumElements(int[,] matrix)
 }
 int SumMinimum(int[] array)
 {
-    int indexmin=0;
+    int indexmin = 0;
     int min = array[0];
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i] <= min) 
+        if (array[i] <= min)
         {
             min = array[i];
-            indexmin= i+1;
+            indexmin = i + 1;
         }
     }
     return indexmin;
